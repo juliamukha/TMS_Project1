@@ -1,0 +1,51 @@
+@import 'variables.less';
+
+.about {
+    margin-bottom: 60px;
+
+    &__subtitle {
+        margin-bottom: 70px;
+    }
+
+    &-section {
+        &__title {
+            margin-bottom: 35px;
+        }
+
+        &__image {
+            margin: auto;
+            display: block;
+            margin-bottom: 35px;
+        }
+
+    }
+
+    @media (max-width: @width-media-desktop) {
+        &__subtitle {
+            margin-bottom: 30px;
+        }
+
+        &-section__image {
+            margin-bottom: 30px;
+            max-width: 147px;
+        }
+
+        &-section__title {
+            margin-bottom: 30px;
+        }
+    }
+
+    @media (max-width: @width-media-mobile) {
+        &__article {
+            margin-bottom: 10px;
+        }
+
+        &__subtitle {
+            margin-bottom: 50px;
+        }
+
+        &-section__image {
+            margin-bottom: 20px;
+        }
+    }
+}

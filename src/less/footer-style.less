@@ -1,0 +1,55 @@
+@import 'variables.less';
+
+.footer {
+    background-color: @text-color-black;
+    padding: 35px 0 30px 0;
+
+    &__container {
+        text-align: center;
+    }
+
+    &__icons {
+        margin-bottom: 25px;
+    }
+
+    &__icon {
+        font-size: 2.5rem;
+        color: @icon-color-grey;
+        margin: 0 20px;
+
+        &_hover:hover {
+            color: @accent-color;
+        }
+    }
+
+    &__copyright {
+        color: @icon-color-grey;
+    }
+
+    @media (max-width: @width-media-desktop) {
+        &__icons {
+            margin-bottom: 40px;
+        }
+
+        &__icon {
+            font-size: 2.1rem;
+        }
+    }
+
+    @media (max-width: @width-media-mobile) {
+        padding-bottom: 45px;
+
+        &__icon {
+            font-size: 1.5rem;
+            margin: 0 12px;
+
+            &:first-child {
+                margin-left: 0;
+            }
+
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+    }
+}

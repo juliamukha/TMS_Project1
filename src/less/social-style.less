@@ -1,0 +1,63 @@
+@import 'variables.less';
+
+.social {
+    background-color: @bg-color-grey;
+    padding-top: 18px;
+    padding-bottom: 18px;
+
+    &__container {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__text-holder {
+        flex-basis: 40%;
+        margin-right: 30px;
+    }
+
+    &__title {
+        margin-bottom: 18px;
+    }
+
+    &__icons-holder {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-grow: 1;
+    }
+
+    &__icon {
+        color: @icon-color-grey;
+        font-size: 3.25rem;
+
+        &_hover:hover {
+            color: @accent-color;
+        }
+    }
+
+    @media (max-width: @width-media-desktop) {
+        &__icon {
+            font-size: 3rem;
+        }
+
+    }
+
+    @media (max-width: @width-media-mobile) {
+        padding-top: 45px;
+        padding-bottom: 45px;
+
+        &__container {
+            flex-direction: column;
+        }
+
+        &__text-holder {
+            margin-bottom: 30px;
+            text-align: center;
+        }
+
+        &__icon {
+            font-size: 1.9rem;
+        }
+
+    }
+}

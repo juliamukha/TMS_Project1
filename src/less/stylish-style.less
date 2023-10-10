@@ -1,0 +1,33 @@
+@import 'variables.less';
+
+.stylish {
+    padding: 100px 0 50px 0;
+    background: url('../assets/image/main_img_bottom.jpg') center center no-repeat transparent;
+    background-size: cover;
+
+    &__subtitle {
+        margin-bottom: 73px;
+    }
+
+    &__button {
+        margin: 0 auto;
+        width: ~'calc(100%/3 - 60px)';
+    }
+
+    @media(max-width: @width-media-desktop) {
+        padding: 100px 0 50px 0;
+    
+        &__subtitle {
+            margin-bottom: 30px;
+        }
+    }
+
+    @media(max-width: @width-media-mobile) {
+        padding: 50px 0 60px 0;
+
+        &__button {
+            width: 100%;
+            max-width: 290px;
+        }    
+    }
+}
